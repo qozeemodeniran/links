@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Link extends Model
 {
-    use HasFactory;
+    // use HasFactory;
+    protected $fillable = [
+        'title',
+        'url',
+        'description'
+    ];
 }
